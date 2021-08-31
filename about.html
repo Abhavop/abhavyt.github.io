@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+   <title>About</title>
+   <link rel="stylesheet" type="text/css" href ="style.css">
+   <link rel="icon" href='1.jpg' />
+</head>
+<body>
+  <header>
+   <a herf="#" class="logo">Abhav</a>
+   <ul>
+    <li><a href="index.html">Home</li></a>
+    <li><a href="" class="active">About</li></a>
+    <li><a href="https://discord.gg/HvVG8tCgwH">Discord</li></a>
+    <li><a href="https://www.youtube.com/channel/UCpwrgvJzrZ4L6Xj6ncTWASA">Youtube</li></a>
+   </ul>
+   </header>
+  <section>
+    <img src="stars.png" id="stars">
+    <img src="moon.png" id="moon">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <a href="#sec" id="btn">Know About Me</a>
+    <img src="mountains_front.png" id="mountains_front">
+   </section>
+   <div class="sec" id="sec">
+     <h2>Hobbies -</h2>
+     <p>Gaming<br><br>Coding<br><br>Youtube</p>
+   </div>
+   <script>
+     let text = document.getElementById('text');
+     let btn = document.getElementById('btn');
+
+     window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+     })
+   </script>
+  </body>
+ </html>
